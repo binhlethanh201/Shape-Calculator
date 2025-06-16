@@ -1,73 +1,50 @@
-# Getting Started with Java Application
+Getting Started with Java Project
+This project was bootstrapped with Java.
 
-This project was built with core Java and is structured for easy compilation and execution.
-
-## Available Scripts
-
+Available Commands
 In the project directory, you can run:
 
-### `javac Main.java`
+mvn clean install
+Builds the project and installs the package into the local repository.
+This command compiles the code, runs tests, and packages the application.
 
-Compiles the Java source file.\
-Make sure you're in the directory where `Main.java` exists.
+mvn spring-boot:run
+Runs the application in the development mode.
+Open http://localhost:8080 to view it in your browser.
 
-```bash
-javac Main.java
-java Main
-Runs the compiled Java program.
-This command will execute the Main class and display the output in your console.
+The application will reload when you make changes.
+You may also see any errors in the console.
 
-bash
-Copy
-Edit
-java Main
-mvn compile
-Compiles the project using Maven (if a pom.xml file is provided).
-You can use this when working in a larger modular Java project.
+mvn test
+Launches the test runner to execute the tests.
+See the section about running tests for more information.
 
-bash
-Copy
-Edit
-mvn compile
-mvn exec:java
-Executes the main class using Maven.
-Requires configuration in pom.xml to specify the main class.
+mvn package
+Packages the application into a JAR file.
+The JAR file will be created in the target directory and is ready for deployment.
 
-bash
-Copy
-Edit
-mvn exec:java -Dexec.mainClass="com.example.Main"
-gradle build
-Builds the project using Gradle (if a build.gradle file is provided).
-Useful for managing dependencies and packaging your Java application.
+mvn clean
+Cleans the project by deleting the target directory.
+This command is useful to ensure a fresh build.
 
-bash
-Copy
-Edit
-gradle build
-gradle run
-Runs the application using Gradle.
-This requires setting up the application plugin in your build.gradle.
-
-bash
-Copy
-Edit
-gradle run
 Learn More
-You can learn more in the official Java and build tool documentation:
+You can learn more in the Maven documentation.
 
-Java Tutorials
+To learn Spring Boot, check out the Spring Boot documentation.
 
-Maven Documentation
+Dependency Management
+This section has moved here: Maven Dependency Management
 
-Gradle Documentation
+Building a RESTful Web Service
+This section has moved here: Building a RESTful Web Service
 
-Packaging into a JAR
-Learn how to package your Java project as a .jar file:
-https://docs.oracle.com/javase/tutorial/deployment/jar/build.html
+Advanced Configuration
+This section has moved here: Maven Advanced Configuration
 
-Using External Libraries
-To manage libraries and dependencies easily, use a build tool like Maven or Gradle.
+Deployment
+This section has moved here: Deploying Spring Boot Applications
 
-IDE Integration
-Popular IDEs like IntelliJ IDEA or Eclipse provide built-in tools for running, debugging, and managing Java projects efficiently.
+Troubleshooting
+This section has moved here: Maven Troubleshooting # Getting Started with Java Project
+
+This project was bootstrapped with Java.
