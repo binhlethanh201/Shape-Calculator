@@ -1,61 +1,60 @@
-# Getting Started with Java Project
+# JAVA Project
 
-This project was bootstrapped with Java.
+This repository contains a Java project that demonstrates Object-Oriented Programming (OOP) principles through a Shape Calculator application. The project showcases encapsulation, inheritance, and polymorphism, and is designed for educational purposes to illustrate how OOP concepts can be applied to real-world scenarios such as calculating the area and perimeter of different geometric shapes.
 
-## Available Commands
+## Prerequisites
 
-In the project directory, you can run:
+- Java Development Kit (JDK) 8 or higher
+- (Optional) An IDE like IntelliJ IDEA, Eclipse, NetBeans, or VS Code for easier code navigation
 
-### `mvn clean install`
+## Installation
 
-Builds the project and installs the package into the local repository.\
-This command compiles the code, runs tests, and packages the application.
+1. **Clone the repository** (if not already downloaded):
+   ```sh
+   git clone <repository-url>
+   cd Shape-Calculator-main
+   ```
+2. **Compile the source code:**
+   Navigate to the `src` directory and compile the Java source files:
+   ```sh
+   javac -d ../bin src/*.java
+   ```
+   This will compile the Java files and place the `.class` files in the `bin` directory.
 
-### `mvn spring-boot:run`
+## How to Run
 
-Runs the application in the development mode.\
-Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+After compiling, run the main class for the Shape Calculator application:
 
-The application will reload when you make changes.\
-You may also see any errors in the console.
+```sh
+java -cp bin Main
+```
 
-### `mvn test`
+Or, if you use an IDE, simply open the project folder and run `Main.java` from the IDE.
 
-Launches the test runner.\
-This command runs all the tests in the project.
+## Project Structure
 
-### `mvn package`
+```
+Shape-Calculator-main/
+├── src/
+│   ├── Circle.java
+│   ├── Main.java
+│   ├── Rectangle.java
+│   ├── Shape.java
+│   └── Triangle.java
+├── bin/
+│   ├── Circle.class
+│   ├── Main.class
+│   ├── Rectangle.class
+│   ├── Shape.class
+│   └── Triangle.class
+└── README.md
+```
 
-Packages the application into a JAR file.\
-The JAR file will be created in the `target` directory.
-
-### `mvn clean`
-
-Cleans the project by deleting the `target` directory.\
-This command is useful for ensuring a fresh build.
+- The `src/` directory contains the Java source files for the main application and its shape classes.
+- The `bin/` directory contains the compiled `.class` files after building the project.
 
 ## Learn More
 
-You can learn more in the [Maven documentation](https://maven.apache.org/guides/index.html).
-
-To learn Spring Boot, check out the [Spring Boot documentation](https://spring.io/projects/spring-boot).
-
-### Dependency Management
-
-This section has moved here: [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
-
-### Building an Executable JAR
-
-This section has moved here: [Spring Boot Executable JAR](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-executable-jar.html)
-
-### Advanced Configuration
-
-This section has moved here: [Maven Advanced Configuration](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-
-### Deployment
-
-This section has moved here: [Spring Boot Deployment](https://spring.io/guides/gs/spring-boot/)
-
-### Troubleshooting
-
-This section has moved here: [Maven Troubleshooting](https://maven.apache.org/guides/introduction/introduction-to-troubleshooting.html)
+- [Java Documentation](https://docs.oracle.com/javase/tutorial/)
+- [How to Compile and Run Java](https://www.oracle.com/java/technologies/javase/codeconventions-137265.html)
+- For questions or contributions, please open an issue or pull request.
